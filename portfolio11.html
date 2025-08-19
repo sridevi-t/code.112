@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Personal Portfolio Webpage</title>
+   <style>
+
+   
+
+
+
+body{
+  font-family: 'papyrus',fantasy;
+  margin: 0;
+  padding: 0;
+
+  }#navbar{
+  background-color: #86d636;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#nav-list{
+  display: flex;
+  flex-direction: row;
+
+}
+li{
+  list-style: none;
+}
+a{
+  color: #2098a8;
+  text-decoration: none;
+font-size: 1.5em;
+padding: 1rem 2rem;
+
+}
+a::hover{
+  background-color: #00ff7f;
+
+}
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc0cb;  background-image: linear-gradient()
+    62deg,
+    #3a3d40 0%,
+    #181719 100;
+  );
+}
+h1{
+  color: white;
+  font-size: 4rem;
+  font-weight:700;
+}
+#welcome-section > p{
+color: #f0ffff;
+font-size: 2.5rem;
+font-style: italic;
+font-weight: 100;
+}
+.projects{
+  margin: 0;
+  padding: 8rem 2rem;
+  text-align: center;
+  background-color: #50f4fa;
+}
+h2{
+  
+  font-size: 3.2rem;
+  color:778899 ;
+}
+@media (max-width: 800px){
+  h2{
+    font-size: 2rem;
+  }
+}
+.project-img{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+
+}
+.project-tile{
+  color: white;
+  width: 100%;
+  background-color: #db7093;
+  padding: 2rem 0;
+  margin: 0;
+}
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+#contact{
+  background-color: #fffacd;
+  width: 100%;
+  height: 80vh;
+margin: 0;
+padding: 1rem 2rem;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+#contact-p{
+  color: white;
+font-style: italic;
+font-weight: 100;
+text-align: center;
+font-size: 2rem;
+}
+</style>
+
+    </head>
+    <body>
+      <nav id="navbar" ><ul id="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+            </li>  <li>
+          <a href="project">Work</a>
+            </li>
+                    <li>
+          <a href="contact">Contact</a>
+            </li>
+            </ul>
+        </nav>
+<section id="welcome-section" class="welcome-section">
+  <h1> Hello Welcome!!</h1>
+  <p>I am a web developer</p>
+</section>
+<section id="projects" class="projects">
+  <h2>These are some of my Projects</h2>
+
+  <div class="project-grid">
+
+    <a href="">
+      <img  src="https://www.sapaviva.com/wp-content/uploads/2017/06/8S.-Nikola-Tesla-1856-1943-508x508.jpg" alt="Tribute Page" class="project-img" />
+      <p class="project-tile">Tribute Page</p>
+</a>
+
+ <a href="#">
+      <img  src="https://screenshots.codesandbox.io/spj4n/10.png" alt="Survey Form" class="project-img" />
+      
+      <p class="project-tile">Survey Form</p>
+</a>
+<a href="">
+      <img  src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190628094222/Java-Tutorial-by-GeeksforGeeks.png" alt="Technical Documentation Page" class="project-img" />
+      
+      <p class="project-tile">Technical Documentation Page</p>
+</a>
+<a href="">
+      <img  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="CatPhotoApp" class="project-img" />
+      
+      <p class="project-tile">CatPhotoApp</p>
+</a>
+
+<a href="">
+      <img  src="https://static.vecteezy.com/system/resources/previews/044/419/237/non_2x/many-banknotes-of-different-currency-background-of-big-amount-of-random-money-bills-photo.JPG" alt="Currency Converter" class="project-img" />
+      
+      <p class="project-tile">Currency Converter</p></a><a href="">
+
+<img src="https://play-lh.googleusercontent.com/HP0WzssJka5d6MidulU-DJMZMSBI-o3MrhAQJJyOojuFORC6B2hyuDtYizuFnHdI0w=w240-h480-rw" class="project-img"/><p class="project-tile">Live Dictionary</p>
+</a>
+
+<a href="">
+      <img  src="https://i.pinimg.com/736x/71/55/c4/7155c4499ac07c86417c637b3d6574a3.jpg" alt="CatPhotoApp" class="project-img" />
+      
+      <p class="project-tile">Product Landing Page</p>
+</a>
+
+<a href="">
+      <img  src="https://blogger.googleusercontent.com/img/a/AVvXsEiK6IynSDvqKTiCBw9ZiufWT4V_ts4IgOaijktRgwVZNDrVev4_vx4ov6FQDNsyUy4aVGITld5DFOroZh1pOVdsV4t0bXGOx1z9NzpEmWBsT6mnQsM-ViviUgZoOzZ5Qf5lbtRcsbWUCmzA-wbYa4nc4OFjViq4vJvbMVe0Sxa75TvjSiqw4qwuHZjBng=s16000"  class="project-img"/>
+      
+      <p class="project-tile">Clock and Stopwatch</p>
+</a>
+</div>
+
+</section>
+<section id="contact" class="contact">
+  <div id="contact-header">
+<h2>Let's work Together....</h2>
+
+
+  </div>
+    <div id="contact-links">
+<a href="" id="profile-link" target="_blank">Github</a>
+<a href="" id="profile-link" target="_blank">Instagram</a>
+<a href="" id="profile-link" target="_blank">Facebook</a>
+<a href="" id="profile-link" target="_blank">LinkedIn</a>
+
+    </div>
+
+
+</section>
+
+    </body>
+    </html>
